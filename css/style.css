@@ -320,6 +320,10 @@ textarea {
   /* 2 */
 }
 
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
