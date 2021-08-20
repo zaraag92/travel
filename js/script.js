@@ -33,24 +33,24 @@ let swiperSlider1 = new Swiper(swiper1, {
 
 
 
-// let swiperSlider2 = new Swiper(swiper2, {
-// 	centeredSlides: true,
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	spaceBetween: 10,
-// 	fadeEffect: {
-// 		crossFade: true
-// 	},
-// 	effect: 'fade',
-// 	navigation: {
-// 		nextEl: '.btn-right',
-// 		prevEl: '.btn-left',
-// 	},
-// 	autoplay: {
-// 		delay: 4000,
-// 	}
+let swiperSlider2 = new Swiper(swiper2, {
+	centeredSlides: true,
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 10,
+	fadeEffect: {
+		crossFade: true
+	},
+	effect: 'fade',
+	navigation: {
+		nextEl: '.btn-right',
+		prevEl: '.btn-left',
+	},
+	autoplay: {
+		delay: 4000,
+	}
 
-// });
+});
 
 swiperPlay.addEventListener('click', (e) => {
 	let video = e.currentTarget.closest('.main-slider__media').querySelector('video');

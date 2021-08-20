@@ -2443,7 +2443,7 @@ a:hover {
 @media (max-width: 992px) {
   .search-form__field {
     height: 80px;
-     border-radius: none;
+    border-radius: 0;
   }
 
   .main-slider__media {
@@ -2737,6 +2737,11 @@ a:hover {
     margin: 15px 0 0 0;
   }
 
+  .inspo__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .inspo-grid__title {
     font-size: 24px;
     line-height: 30px;
@@ -2826,12 +2831,6 @@ a:hover {
 
   .sign-up-form__btn {
     padding: 25px 0 25px 0;
-  }
-
-  .inspo__grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(400px, auto);
   }
 
   .inspo-grid__link {
