@@ -2443,6 +2443,7 @@ a:hover {
 @media (max-width: 992px) {
   .search-form__field {
     height: 80px;
+     border-radius: none;
   }
 
   .main-slider__media {
