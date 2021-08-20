@@ -320,10 +320,6 @@ textarea {
   /* 2 */
 }
 
-input[type="search"] {
-  -webkit-appearance: none;
-}
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
@@ -1335,6 +1331,10 @@ input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
   display: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
 }
 
 input {
@@ -2508,15 +2508,6 @@ a:hover {
   }
 
   .inspo-grid__item {
-    height: auto;
-  }
-
-  .inspo-grid__item-big {
-    -ms-grid-column-span: 2;
-    grid-column-end: 2;
-  }
-
-  .inspo-grid__item {
     padding: 0 15px 15px 15px;
   }
 }
@@ -2554,6 +2545,20 @@ a:hover {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+
+  .inspo__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .inspo-grid__item {
+    height: auto;
+  }
+
+  .inspo-grid__item-big {
+    -ms-grid-column-span: 2;
+    grid-column-end: 2;
   }
 
   .footer__container {
@@ -2739,11 +2744,6 @@ a:hover {
     border-radius: 0;
     border-radius: 0;
     margin: 15px 0 0 0;
-  }
-
-  .inspo__grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   .inspo-grid__title {
